@@ -9,12 +9,12 @@ CREATE SCHEMA tldn;
 USE tldn;
 
 --
--- Table structure for table `actor`
+-- Table structure for table `tldn`
 --
 
 CREATE TABLE if not exists tldn (
   tldn_id SMALLINT UNSIGNED NOT NULL AUTO_INCREMENT,
-  tldn_code VARCHAR(10) NOT NULL,
-  tldn_fqdn VARCHAR(30) NOT NULL,
+  tldn_code VARCHAR(15) NOT NULL,
+  tldn_fqdn VARCHAR(40) NOT NULL,
   PRIMARY KEY  (tldn_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
