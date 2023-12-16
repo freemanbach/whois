@@ -1,5 +1,3 @@
-#!/usr/local/bin/env python
-
 """
 author  : freeman
 desc    : to check this list of world-wide whois servers

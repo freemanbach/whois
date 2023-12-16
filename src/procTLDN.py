@@ -1,5 +1,3 @@
-#!/usr/local/bin/env python
-
 import sys
 
 def main():
