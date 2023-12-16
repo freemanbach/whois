@@ -64,6 +64,7 @@ cash,whois.nic.cash
 casino,whois.nic.casino
 catering,whois.nic.catering
 center,whois.nic.center
+cc,webwhois.verisign.com
 ch,whois.nic.ch
 charity,whois.nic.charity
 chat,whois.nic.chat
@@ -83,7 +84,7 @@ co.za,coza-whois.registry.net.za
 coach,whois.nic.coach
 codes,whois.nic.codes
 coffee,whois.nic.coffee
-com,whois.verisign-grs.com
+com,webwhois.verisign.com
 community,whois.nic.community
 company,whois.nic.company
 computer,whois.nic.computer
@@ -124,6 +125,7 @@ domains,whois.nic.domains
 download,whois.nic.download
 durban,whois.nic.durban
 earth,whois.nic.earth
+edu,webwhois.verisign.com
 education,whois.nic.education
 ee,whois.eenet.ee
 email,whois.nic.email
@@ -186,7 +188,6 @@ haus,whois.nic.haus
 health,whois.nic.health
 healthcare,whois.nic.healthcare
 help,whois.nic.help
-hm,webhost1.capital.hm
 hockey,whois.nic.hockey
 holdings,whois.nic.holdings
 holiday,whois.nic.holiday
@@ -215,7 +216,7 @@ ist,whois.afilias-srs.net
 istanbul,whois.afilias-srs.net
 jetzt,whois.nic.jetzt
 jewelry,whois.nic.jewelry
-jobs,jobswhois.verisign-grs.com
+jobs,webwhois.verisign.com
 jobs,whois.nic.jobs
 joburg,whois.nic.joburg
 jp,whois.jprs.jp
@@ -271,7 +272,7 @@ mx,whois.mx
 na,whois.na-nic.com.na
 name,whois.nic.name
 navy,whois.nic.navy
-net,whois.verisign-grs.com
+net,webwhois.verisign.com
 net.za,net-whois.registry.net.za
 network,whois.nic.network
 news,whois.nic.news
