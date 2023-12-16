@@ -1,6 +1,6 @@
 import sys
 
-def main():
+def main(*args, **kwargs):
     cnt, fqdn = 1, []
     fi = sys.argv[1]
     with open(fi, mode="r") as f:
