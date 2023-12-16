@@ -9,7 +9,7 @@ import sys
 import requests as req
 
 def main():
-    cnt, bad_servers = 0, []
+    bad_servers,cnt = [], 1
     try:
         sf = sys.argv[1]
     except IndexError as err:
@@ -19,22 +19,25 @@ def main():
         for i in f:
             tmp = i.split(',')
             try:
-                ans = req.get("http://" +str(tmp[1]).rstrip("\n"))
+                ans1 = req.get("http://" +str(tmp[1]).rstrip("\n"))
+                ans2 = req.get("https://" +str(tmp[1]).rstrip("\n"))
             except req.exceptions.Timeout as to_err:
                 bad_servers.append(str(tmp[1]))
             except req.exceptions.TooManyRedirects as red_err:
                 bad_servers.append(str(tmp[1]))
             except req.exceptions.RequestException as e:
                 bad_servers.append(str(tmp[1]))
-                print(bad_servers)
-                sys.exit()
+                # print(bad_servers)
+                # sys.exit()
 
-            if ans.ok == True:
+            # either http or https is successful
+            if ans1.ok == True or ans2.ok == True:
                 print(str(cnt) + "  " + str(tmp[1]).rstrip("\n") + "  ok.")
                 cnt+=1
-                continue
+            # idk whether it would ever get to this else
             else:
-                bad_servers.append(str(tmp[1]))
+                print(bad_servers)
+                sys.exit()
 
 if __name__ == "__main__":
     main()
